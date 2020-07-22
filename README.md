@@ -1,68 +1,72 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  Test React Components with Jest and React Testing Library
+</h1>
 
-## Available Scripts
+- [Test React Components with Jest and React Testing Library](#test-react-components-with-jest-and-react-testing-library)
+  - [Intro](#intro)
+  - [Preparation](#preparation)
+  - [Course schedule](#course-schedule)
+    - [Understand what problems these tools are solving](#understand-what-problems-these-tools-are-solving)
+    - [Readings](#readings)
+    - [Common and simple testing senarios](#common-and-simple-testing-senarios)
+    - [Readings](#readings-1)
+    - [Real world example](#real-world-example)
 
-In the project directory, you can run:
+## Intro
 
-### `yarn start`
+This repo is derived from [Kent.C.Dodds' react-testing-library-course](https://github.com/kentcdodds/react-testing-library-course).
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+It is re-organized with relative reading materials and more complex real world examples based on my experience and thoughts about using react-testing-library.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Preparation
 
-### `yarn test`
+Make sure you have node >= 10 & yarn >= 1.19.1 installed, and run `yarn`.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Run `yarn test` to launch the test runner in the interactive watch mode.
 
-### `yarn build`
+## Course schedule
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Understand what problems these tools are solving
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+1.  `react-dom.js` - Render a React component for testing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2.  `jest-dom.js` - Use jest-dom for improved assertions
 
-### `yarn eject`
+3.  `dom-testing-library.js` - Use dom-testing-library to write more
+    maintainable React tests
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4.  `react-testing-library.js` - Use react-testing-library to render and test
+    React Components
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Readings
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [Guiding principles of react-testing-library](https://testing-library.com/docs/guiding-principles)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [Quick overview of utilities provied by react-testing-library](https://testing-library.com/docs/react-testing-library/cheatsheet)
 
-## Learn More
+### Common and simple testing senarios
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5.  `state.js` - Test React Component state changes with react-testing-library
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+6.  `prop-updates.js` - Test prop updates with react-testing-library
 
-### Code Splitting
+7.  `redux.js` - Test a redux connected React Component
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+8.  `http-jest-mock.js` - Mock HTTP Requests with jest.mock in React Component
+    Tests
 
-### Analyzing the Bundle Size
+9.  `mock-component.js` - Mock react-transition-group in React Component Tests
+    with jest.mock
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- (optional) `render-props.js` - Test React Component that uses render-props
 
-### Making a Progressive Web App
+- (optional) `custom-hook.js` - Test a custom hook
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### Readings
 
-### Advanced Configuration
+- [Concepts about writing easy understood and maintainable tests](https://kentcdodds.com/testing/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### Real world example
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+10. `form.js` - Test a complex form application built with React and 3rd party
+    UI library.
