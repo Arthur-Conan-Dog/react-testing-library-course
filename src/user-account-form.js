@@ -10,13 +10,16 @@ const Plans = {
 
 const planOptions = Object.entries(Plans).map(entry => ({ label: entry[0], value: entry[1] }))
 
-const SignUpForm = ({ submit }) => {
-  const initialValues = {
-    email: '',
+function generateInitialValues(isEditing, user) {
+  return isEditing ? Object.assign({}, user) : {
     password: '',
     username: '',
     plan: null,
   }
+}
+
+const UserAccountForm = ({ submit, isEditing = false, user }) => {
+  const initialValues = generateInitialValues(isEditing, user)
 
   const submitForm = values => submit(values)
 
@@ -48,11 +51,11 @@ const SignUpForm = ({ submit }) => {
 
       <Form.Item>
         <Button type="primary" htmlType="submit">
-          Create Account
+          {isEditing ? 'Save' : 'Create'}
         </Button>
       </Form.Item>
     </Form>
   )
 }
 
-export { SignUpForm }
+export default UserAccountForm
