@@ -1,12 +1,21 @@
 import React from 'react'
 
-import {Form, Input, Button} from 'antd'
+import { Form, Input, Select, Button } from 'antd'
 
-const SignInForm = ({submit}) => {
+const Plans = {
+  Free: 0,
+  Team: 1,
+  Enterprise: 2,
+}
+
+const planOptions = Object.entries(Plans).map(entry => ({ label: entry[0], value: entry[1] }))
+
+const SignUpForm = ({ submit }) => {
   const initialValues = {
-    username: '',
+    email: '',
     password: '',
-    remember: true,
+    username: '',
+    plan: null,
   }
 
   const submitForm = values => submit(values)
@@ -16,7 +25,7 @@ const SignInForm = ({submit}) => {
       <Form.Item
         label="Username"
         name="username"
-        rules={[{required: true, message: 'Please input your username!'}]}
+        rules={[{ required: true, message: 'Please input username!' }]}
       >
         <Input />
       </Form.Item>
@@ -24,18 +33,26 @@ const SignInForm = ({submit}) => {
       <Form.Item
         label="Password"
         name="password"
-        rules={[{required: true, message: 'Please input your password!'}]}
+        rules={[{ required: true, message: 'Please input password!' }]}
       >
-        <Input.Password />
+        <Input />
+      </Form.Item>
+
+      <Form.Item
+        label="Account Plan"
+        name="plan"
+        rules={[{ required: true, message: 'Please choose a plan!' }]}
+      >
+        <Select placeholder="Choose a plan for your account" options={planOptions} />
       </Form.Item>
 
       <Form.Item>
         <Button type="primary" htmlType="submit">
-          Submit
+          Create Account
         </Button>
       </Form.Item>
     </Form>
   )
 }
 
-export {SignInForm}
+export { SignUpForm }
