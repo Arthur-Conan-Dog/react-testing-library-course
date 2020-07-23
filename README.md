@@ -2,7 +2,7 @@
   Test React Components with Jest and React Testing Library
 </h1>
 
-This repo is derived from [Kent.C.Dodds' 💯react-testing-library-course](https://github.com/kentcdodds/react-testing-library-course).
+This repo is derived from 💯 [Kent.C.Dodds' react-testing-library-course](https://github.com/kentcdodds/react-testing-library-course).
 
 It is re-organized with relative reading materials and more complex real world examples based on my experience and thoughts about using react-testing-library.
 

@@ -2,7 +2,7 @@
   "name": "react-testing-library-course",
   "version": "0.1.0",
   "private": true,
-  "description": "Course material for testing React components using react-testing-library, derived from same name repo of Kent.C.Dodds.",
+  "description": "Course material for testing React components using react-testing-library, derived from Kent.C.Dodds' same name repo.",
   "keywords": [
     "testing-library"
   ],
