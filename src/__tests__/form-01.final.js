@@ -13,7 +13,7 @@ test('should submit with correct values', async () => {
   fireEvent.mouseDown(getByLabelText(/plan/i))
   fireEvent.click(getByText(/free/i))
 
-  fireEvent.click(container.querySelector('button'))
+  fireEvent.click(getByText(/create/i).parentElement)
 
   await wait(() =>
     expect(submit).toHaveBeenCalledWith({
@@ -28,7 +28,7 @@ test('should show error messages when validation fails', async () => {
   const submit = jest.fn()
   const { container, getByText } = render(<UserAccountForm submit={submit} />)
 
-  fireEvent.click(container.querySelector('button'))
+  fireEvent.click(getByText(/create/i).parentElement)
 
   await wait(() => {
     expect(getByText(/please input username/i)).not.toBeNull()
@@ -37,7 +37,7 @@ test('should show error messages when validation fails', async () => {
   })
 })
 
-test('should be filled with user info when is updating', async () => {
+test('should be filled with user info when is editing', async () => {
   const submit = jest.fn()
   const user = {
     email: 'jane@gmail.com',

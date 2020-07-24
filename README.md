@@ -62,9 +62,8 @@ Run `yarn test` to launch the test runner in the interactive watch mode.
 
 ### Readings
 
-- [Concepts about writing easy understood and maintainable tests](https://kentcdodds.com/testing/)
+- [Theories about writing easy understood and maintainable tests](https://kentcdodds.com/testing/)
 
 ### Real world example
 
-10. `form.js` - Test a complex form application built with React and 3rd party
-    UI library.
+10. `form.js` - Test a complex form application built with React and 3rd party UI library.
