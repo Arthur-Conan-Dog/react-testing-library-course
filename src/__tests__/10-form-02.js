@@ -2,8 +2,8 @@ import React from 'react';
 import { render, wait } from '@testing-library/react';
 import UserAccountForm from '../user-account-form';
 
-// 🌟To solve problems raised by form-01's code, we take one step at a time.
-// 🌟In this exercise, we only focus on aggregating code that represents a single step of user action to form a clean code reading context that strongly connected with business case.
+// 🌟 To solve problems raised by form-01's code, we take one step at a time.
+// 🌟 In this exercise, we only focus on aggregating code that represents a single step of user action to form a clean code reading context that strongly connected with business case.
 
 // 2. Implement this setup method according to the given interface definition
 const setup = (props) => {
