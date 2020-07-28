@@ -1,10 +1,14 @@
-// import React from 'react'
-// import ReactDOM from 'react-dom'
-// import { FavoriteNumber } from '../favorite-number'
+// 🌟https://github.com/testing-library/jest-dom
+// 🌟Note that you won't be needing to import 'jest-dom' by yourself in this exercise, it's been already setup.
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { FavoriteNumber } from '../favorite-number';
 
 test('renders a number input with a label "Favorite Number"', () => {
-  // create a div using DOM API as root for React component to be mounted
-  // render the FavoriteNumber component to that div using a React API
-  // assert the input type attribute is `number` by using jest-dom's API
-  // assert the label text content is "Favorite Number" by using jest-dom's API
-})
+  const div = document.createElement('div');
+  ReactDOM.render(<FavoriteNumber />, div);
+  // assert the input type attribute is `number` by using jest-dom's toHaveAttribute API
+  expect(div.querySelector('input').type).toBe('number');
+  // assert the label text content is "Favorite Number" by using jest-dom's toHaveTextContent API
+  expect(div.querySelector('label').textContent).toBe('Favorite Number');
+});
