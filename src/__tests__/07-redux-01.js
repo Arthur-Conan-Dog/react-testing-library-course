@@ -5,7 +5,7 @@
 // import { store } from '../redux-store'
 
 test('can render with redux with defaults', () => {
-  // render Counter component within Provider. Don't forget to set Provider's store.
-  // fire a click event on + button
-  // get the count element by label query and make assertion that count's text content has changed to '1'
-})
+  // 1. render Counter component within Provider. quick recap about how to use redux with react: https://redux.js.org/basics/usage-with-react#passing-the-store
+  // 2. fire a click event on + button
+  // 3. get the count element by label query and make assertion that count's text content has changed to '1'
+});

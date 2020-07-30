@@ -8,13 +8,13 @@ It is re-organized with relative reading materials and more complex real world e
 
 ## Links
 
-  - [Preparation](#preparation)
-  - [Course schedule](#course-schedule)
-    - [Understand what problems these tools are solving](#understand-what-problems-these-tools-are-solving)
-    - [Readings](#readings)
-    - [Common and simple testing senarios](#common-and-simple-testing-senarios)
-    - [Readings](#readings-1)
-    - [Real world example](#real-world-example)
+- [Preparation](#preparation)
+- [Course schedule](#course-schedule)
+  - [Understand what problems these tools are solving](#understand-what-problems-these-tools-are-solving)
+  - [Readings](#readings)
+  - [Common and simple testing senarios](#common-and-simple-testing-senarios)
+  - [Readings](#readings-1)
+  - [Real world example](#real-world-example)
 
 ## Preparation
 
@@ -63,6 +63,10 @@ Run `yarn test` to launch the test runner in the interactive watch mode.
 ### Readings
 
 - [Theories about writing easy understood and maintainable tests](https://kentcdodds.com/testing/)
+
+  - Extra: [write fewer, longer tests.](https://kentcdodds.com/blog/write-fewer-longer-tests/)
+
+  - Extra: [avoid nesting when you're testing](https://kentcdodds.com/blog/avoid-nesting-when-youre-testing/)
 
 ### Real world example
 
