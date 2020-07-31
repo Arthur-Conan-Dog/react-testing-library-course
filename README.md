@@ -64,23 +64,25 @@ Run `yarn test` to launch the test runner in the interactive watch mode.
 
 - Write tests. Not too many. Mostly integration.
 
-  - [Static vs Unit vs Integration vs E2E Testing for Frontend Apps: What these mean, why they matter, and why they don't](https://kentcdodds.com/blog/unit-vs-integration-vs-e2e-tests)
+  - Static vs Unit vs Integration vs E2E Testing for Frontend Apps: what these mean, why they matter, and why they don't. [source](https://kentcdodds.com/blog/unit-vs-integration-vs-e2e-tests)
 
-  - [Write tests. Not too many. Mostly integration.](https://kentcdodds.com/blog/write-tests)
+  - Write tests. Not too many. Mostly integration. [source](https://kentcdodds.com/blog/write-tests)
+
+  - How to know what to test: practical advice to help you determine what to test. [source](https://kentcdodds.com/blog/how-to-know-what-to-test)
 
 - Your tests should be completely isolated from one another
 
-  - [Write fewer, longer tests](https://kentcdodds.com/blog/write-fewer-longer-tests)
+  - Write fewer, longer tests: making tests too short often leads to poor testing practices and way more tests. [source](https://kentcdodds.com/blog/write-fewer-longer-tests)
 
-  - [Test Isolation with React](https://kentcdodds.com/blog/test-isolation-with-react)
+  - Test Isolation with React: why your tests should be completely isolated from one another and how to do that. [source](https://kentcdodds.com/blog/test-isolation-with-react)
 
-  - [Avoid Nesting when you're testing](https://kentcdodds.com/blog/avoid-nesting-when-youre-testing)
+  - Avoid Nesting when you're testing: why using hooks like `beforeEach` as a mechanism for code reuse leads to unmaintainable tests and how to avoid it. [source](https://kentcdodds.com/blog/avoid-nesting-when-youre-testing)
 
 - Avoid common testing mistakes
 
-  - [Testing implemenation details](https://kentcdodds.com/blog/testing-implementation-details)
+  - Testing implemenation details: testing implementation details is a recipe for disaster. Why is that? And what does it even mean? [source](https://kentcdodds.com/blog/testing-implementation-details)
 
-  - [Common mistakes](https://kentcdodds.com/blog/common-testing-mistakes)
+  - Common mistakes that people make when testing JavaScript applications. [source](https://kentcdodds.com/blog/common-testing-mistakes)
 
 - [Others](https://kentcdodds.com/testing/)
 
