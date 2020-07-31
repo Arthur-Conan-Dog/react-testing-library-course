@@ -62,11 +62,27 @@ Run `yarn test` to launch the test runner in the interactive watch mode.
 
 ### Readings
 
-- [Theories about writing easy understood and maintainable tests](https://kentcdodds.com/testing/)
+- Write tests. Not too many. Mostly integration.
 
-  - Extra: [write fewer, longer tests.](https://kentcdodds.com/blog/write-fewer-longer-tests/)
+  - [Static vs Unit vs Integration vs E2E Testing for Frontend Apps: What these mean, why they matter, and why they don't](https://kentcdodds.com/blog/unit-vs-integration-vs-e2e-tests)
 
-  - Extra: [avoid nesting when you're testing](https://kentcdodds.com/blog/avoid-nesting-when-youre-testing/)
+  - [Write tests. Not too many. Mostly integration.](https://kentcdodds.com/blog/write-tests)
+
+- Your tests should be completely isolated from one another
+
+  - [Write fewer, longer tests](https://kentcdodds.com/blog/write-fewer-longer-tests)
+
+  - [Test Isolation with React](https://kentcdodds.com/blog/test-isolation-with-react)
+
+  - [Avoid Nesting when you're testing](https://kentcdodds.com/blog/avoid-nesting-when-youre-testing)
+
+- Avoid common testing mistakes
+
+  - [Testing implemenation details](https://kentcdodds.com/blog/testing-implementation-details)
+
+  - [Common mistakes](https://kentcdodds.com/blog/common-testing-mistakes)
+
+- [Others](https://kentcdodds.com/testing/)
 
 ### Real world example
 
