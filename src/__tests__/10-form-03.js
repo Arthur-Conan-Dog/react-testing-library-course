@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent, wait } from '@testing-library/react';
-// 2. Foos you need to import
+// 2. Foos you will need to import and implement according to the given API constraints
 // import { FormFoo, ButtonFoo } from '../foo';
 import UserAccountForm from '../user-account-form';
 

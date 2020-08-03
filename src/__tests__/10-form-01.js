@@ -2,11 +2,11 @@
 // import { render, fireEvent, wait } from '@testing-library/react'
 // import UserAccountForm from '../user-account-form'
 
-// 🌟note that you may encounter some problems like elements are not responding as you expected while doing this exercise,
-// 🌟try find out the solutions on stackoverflow, or ant-design/testing-library repo issues.
+// 🌟 note that you may encounter some problems like elements are not responding as you expected while doing this exercise,
+// 🌟 try find out the solutions on stackoverflow, or ant-design/testing-library repo issues.
 
-// 🤔after you've solved all those problems above and made all tests pass, what other problems your code might have introduced?
-// 🤔(say if our codebase has quite a size, and both ant-design and it grows rapidly
+// 🤔 after you've solved all those problems above and made all tests pass, what other problems your code might have introduced?
+// 🤔 (say if our codebase has quite a size, and both ant-design and it grows rapidly
 
 test('should submit with correct values', () => {
   // 1. render UserAccountForm and provide a mock submit function

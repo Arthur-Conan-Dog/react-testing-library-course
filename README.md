@@ -26,14 +26,14 @@ Run `yarn test` to launch the test runner in the interactive watch mode.
 
 ### Understand what problems these tools are solving
 
-1.  `react-dom.js` - Render a React component for testing
+1.  [`react-dom.js`](./src/__tests__/01-react-dom.js) - Render a React component for testing
 
-2.  `jest-dom.js` - Use jest-dom for improved assertions
+2.  [`jest-dom.js`](./src/__tests__/02-jest-dom.js) - Use jest-dom for improved assertions
 
-3.  `dom-testing-library.js` - Use dom-testing-library to write more
+3.  [`dom-testing-library.js`](./src/__tests__/03-dom-testing-library.js) - Use dom-testing-library to write more
     maintainable React tests
 
-4.  `react-testing-library.js` - Use react-testing-library to render and test
+4.  [`react-testing-library.js`](./src/__tests__/04-react-testing-library.js) - Use react-testing-library to render and test
     React Components
 
 ### Readings
@@ -44,21 +44,21 @@ Run `yarn test` to launch the test runner in the interactive watch mode.
 
 ### Common and simple testing senarios
 
-5.  `state.js` - Test React Component state changes with react-testing-library
+5.  [`state.js`](./src/__tests__/05-state.js) - Test React Component state changes with react-testing-library
 
-6.  `prop-updates.js` - Test prop updates with react-testing-library
+6.  [`prop-updates.js`](./src/__tests__/06-prop-updates.js) - Test prop updates with react-testing-library
 
-7.  `redux.js` - Test a redux connected React Component
+7.  `redux.js` [1](./src/__tests__/07-redux-01.js) [2](./src/__tests__/07-redux-01.js) [3](./src/__tests__/07-redux-01.js) - Test a redux connected React Component
 
-8.  `http-jest-mock.js` - Mock HTTP Requests with jest.mock in React Component
+8.  [`http-jest-mock.js`](./src/__tests__/08-http-jest-mock.js) - Mock HTTP Requests with jest.mock in React Component
     Tests
 
-9.  `mock-component.js` - Mock react-transition-group in React Component Tests
+9.  [`mock-component.js`](./src/__tests__/09-mock-component.js) - Mock react-transition-group in React Component Tests
     with jest.mock
 
-- (optional) `render-props.js` - Test React Component that uses render-props
+- (optional) [`render-props.js`](./src/__tests__/render-props.js) - Test React Component that uses render-props
 
-- (optional) `custom-hook.js` - Test a custom hook
+- (optional) [`custom-hook.js`](./src/__tests__/custom-hook-01.js) - Test a custom hook
 
 ### Readings
 
@@ -88,4 +88,4 @@ Run `yarn test` to launch the test runner in the interactive watch mode.
 
 ### Real world example
 
-10. `form.js` - Test a complex form application built with React and 3rd party UI library.
+10. `form.js` [1](./src/__tests__/10-form-01.js) [2](./src/__tests__/10-form-02.js) [3](./src/__tests__/10-form-03.js) - Test a complex form application built with React and 3rd party UI library.
