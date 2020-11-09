@@ -42,7 +42,7 @@ Run `yarn test` to launch the test runner in the interactive watch mode.
 
 - [Quick overview of utilities provied by react-testing-library](https://testing-library.com/docs/react-testing-library/cheatsheet)
 
-### Common and simple testing senarios
+### Common and simple testing scenarios
 
 5.  [`state.js`](./src/__tests__/05-state.js) - Test React Component state changes with react-testing-library
 
