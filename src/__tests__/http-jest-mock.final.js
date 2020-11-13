@@ -15,7 +15,7 @@ test('loads greetings on click', async () => {
   fireEvent.click(getByText(/load/i));
 
   expect(mockLoadGreeting).toHaveBeenCalledTimes(1);
-  expect(mockLoadGreeting).toHaveBeenCalledWith('Mary');
+  expect(mockLoadGreeting).toHaveBeenCalledWith(inputValue);
   await wait(() =>
     expect(getByLabelText(/greeting/i)).toHaveTextContent(testGreeting)
   );
