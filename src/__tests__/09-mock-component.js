@@ -12,20 +12,21 @@
 // If you look at the hidden-message module we're importing, it only uses the
 // `CSSTransition` component from the react-transition-group module. So in
 // our mock module factory function that's all we need to return.
-// 7 use jest.mock to mock out the react-transition-group component
+// 7. use jest.mock to mock out the react-transition-group component
+// https://jestjs.io/docs/en/jest-object#jestmockmodulename-factory-options
 
 test('shows hidden message when toggle is clicked', () => {
-  // 1 render the HiddenMessage component with any message you want
+  // 1. render the HiddenMessage component with any message you want
   //
-  // 2 get the toggle button
+  // 2. get the toggle button
   //
-  // 3 assert that the text you want to render is not in the document
+  // 3. assert that the text you want to render is not in the document
   //
-  // 4 fire an click event on the button:
+  // 4. fire an click event on the button:
   //
-  // 5 assert that your message is in the docuemnt
+  // 5. assert that your message is in the docuemnt
   //
-  // 6 click on the button again
+  // 6. click on the button again
   //
-  // 8 assert that your message is not in the docuemnt anymore
-})
+  // 8. assert that your message is not in the docuemnt anymore
+});

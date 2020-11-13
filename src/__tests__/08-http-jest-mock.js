@@ -8,6 +8,7 @@
 // the module responsible for making that HTTP call to have it return
 // a fake version of what we want it to return.
 // 1. use jest.mock to mock the '../api' module
+// https://jestjs.io/docs/en/mock-functions#mocking-modules
 
 // notice to implement this as an async test:
 test('loads greetings on click', () => {
